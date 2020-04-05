@@ -18,7 +18,6 @@ public class SwaggerConfiguration {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("pe.com.home.clientapi.controller"))
-                //.apis(RequestHandlerSelectors.basePackage("pe.com.home.clientapi.model.dto"))
                 .paths(regex("/api.*"))
                 .build();
     }
